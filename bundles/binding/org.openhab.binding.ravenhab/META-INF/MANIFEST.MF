@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: openHAB RAVEnHAB Binding
+Bundle-SymbolicName: org.openhab.binding.ravenhab
+Bundle-Version: 1.6.0.qualifier
+Bundle-Vendor: rubadubdub.github.com
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: gnu.io,
+ org.apache.commons.lang,
+ org.openhab.core.binding,
+ org.openhab.core.events,
+ org.openhab.core.items,
+ org.openhab.core.library.items,
+ org.openhab.core.library.types,
+ org.openhab.core.types,
+ org.openhab.model.item.binding,
+ org.osgi.framework,
+ org.osgi.service.cm,
+ org.osgi.service.component,
+ org.osgi.service.event,
+ org.slf4j
+Service-Component: OSGI-INF/ravenhabbinding.xml
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.openhab.binding.ravenhab.internal.RAVEnHABActivator
